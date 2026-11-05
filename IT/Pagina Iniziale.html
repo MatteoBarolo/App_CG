@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito_CG(IT)</title>
     <link rel="stylesheet" href="/stile.css">
+    <style>
+    .gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 24px;
+    justify-content: flex-start;
+    padding: 20px 0;
+}
+    .card{
+    display: flex;
+    align-content:space-between;
+    flex-direction: column;
+    width: 300px;
+}
+</style>
 </head>
 <body>
     <a href="#Esempi">Esempi</a><br>
@@ -32,25 +47,37 @@
 
     <p id="Esempi">Esempi</p>
 
-    <a href="/IT/IlCavaliereOscuro.html" target="_self">
-    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" id="Il Cavaliere Oscuro">
-    <image href="/poster/Il cavaliere oscuro.jpg" x="0" y="0" width="300" height="300" />
-    </svg>
-    </a>
+    <div class="gallery">
+        <article class="card">
+            <a href="/IT/IlCavaliereOscuro.html" target="_self">
+                <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" id="Il Cavaliere Oscuro">
+                    <image href="/poster/Il cavaliere oscuro.jpg" x="0" y="0" width="300" height="300" />
+                </svg>
+            </a>
+        </article>
+    </div>
     <p>Il Cavaliere Oscuro (2008)</p>
     
-    <a href="/IT/KamikazeGirls.html" target="_self">
-        <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" id="Kamikaze Girls">
-            <image href="/poster/Kamikaze_Girls.jpg" x="0" y="0" width="300" height="300" />
-        </svg>
-    </a>
+    <div class="gallery">
+        <article class="card">
+            <a href="/IT/KamikazeGirls.html" target="_self">
+                <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" id="Kamikaze Girls">
+                    <image href="/poster/Kamikaze_Girls.jpg" x="0" y="0" width="300" height="300" />
+                </svg>
+            </a>
+        </article>
+    </div>
     <p>Kamikaze Girls (2004)</p>
     
-    <a href="/IT/NodoAllaGola.html" target="_self">
-    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" id="Nodo alla gola">
-    <image href="/poster/NodoAllaGola(IT).jpg" x="0" y="0" width="300" height="300" />
-    </svg>
-    </a>
+    <div class="gallery">
+        <article class="card">
+            <a href="/IT/NodoAllaGola.html" target="_self">
+                <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" id="Nodo alla gola">
+                    <image href="/poster/NodoAllaGola(IT).jpg" x="0" y="0" width="300" height="300" />
+                </svg>
+            </a>
+        </article>
+    </div>
     <p>Nodo alla gola (1948)</p>
 
 
