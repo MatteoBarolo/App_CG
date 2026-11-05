@@ -26,13 +26,13 @@ header {
 .nav-destra {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
 }
 .nav-destra a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
-    font-size: 0.9rem;}
+    font-size: 0.9rem;
 
 /* p{
     color: red;
@@ -66,5 +66,52 @@ header {
     transform: scale (-10px);
     box-shadow: 0 12px 24px rgba (0,0,0,0.25);
     filter: brightness(1.08)
+}
+
+/* titolo centtrato sotto la copertina */
+.card-title{
+    text-align: center;
+    font-weight: bold;
+    margin: 5px 0 8px 0;
+    width: 100%;
 
 }
+
+/* contenitore riga inferiore: distribuisce durata a sinistra e generi a destra */
+.card-meta{
+    display: flex;
+    justify-content: space-around; /* posiziona la durata e i generi al centro ma uno a destra e uno a sinistra */
+    align-items: center;
+    width: 100%;
+    padding: 0 12px; /* modifica la posizione sotto la copertina */
+    box-sizing: border-box;
+}
+
+.card .duration{
+    border: 1px solid#666;
+    border-radius: 12px;
+    padding: 2px 3px;
+    font-size: 0.85em;
+}
+
+
+/* lista di generi verticale e senza pallini */
+.card .genres{
+    display: flex;
+    flex-direction: row;
+    gap: 6px; /* spazio tra un genere e l'altro */
+    list-style: none; /* permette di non avere i pallini a sinistra dei generi */
+    margin:0;
+    padding: 0;
+    font-size: 0.85em;
+}
+
+.card .genres .type{
+    border: 1px solid#666;
+    border-radius: 12px;
+    text-align: center;
+    padding: 2px 3px;
+    font-size: 0.85em;
+}
+
+
