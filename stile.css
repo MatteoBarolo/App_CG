@@ -14,7 +14,8 @@ header {
 }
 .nav-sinistra {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    gap: 5px;
 }
 .nav-sinistra a {
     text-decoration: none;
