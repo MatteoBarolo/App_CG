@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito_CG(IT)</title>
     <link rel="stylesheet" href="../stile.css">
-    <style>
+        <style>
     .gallery{
     display:flex;
     flex-wrap:wrap;
@@ -22,74 +22,75 @@
     </style>
 </head>
 <body>
-    <a href="#Esempi">Esempi</a><br>
-    <a href="#Il Cavaliere Oscuro">Il cavaliere Oscuro</a><br>
-    <a href="#Kamikaze Girls">Kamikaze Girls</a><br>
-    <a href="#Nodo alla gola">Nodo alla gola</a><br>
 
-    <p>Accessibilita'</p>
-    <a href="#FAQ">FAQ</a>
-    
+    <header>
+        <!-- Menu di navigazione in alto a destra -->
+        <nav class="nav-bar">
+            <div class="nav-sinistra">
+                <a href="#Esempi">Esempi</a>
+            </div>
+
+            <div class="nav-destra">
+                <div class="selettore-lingua">
+                    <a href="Pagina Iniziale.html" target="_self">IT</a> | 
+                    <a href="../EN/Homepage.html" target="_self">EN</a>
+                </div>
+                <a href="#accessibilita">ACCESSIBILITÀ</a>
+                <a href="#FAQ">FAQ</a>
+            </div>
+        </nav>
+    </header>
+
     <h1>TITOLO SITO</h1>
-    <h4> <em>TITOLO SITO permette al'utente di prendere appunti su spezzoni di video di contenuti
-    multimediali a sua scelta</em></h4>
+    <p><em>TITOLO SITO permette all'utente di prendere appunti su spezzoni di video di contenuti multimediali a sua scelta</em></p>
 
-    <div style="position: absolute; top:1em; right: 3em; padding: right 10em;">
-    <a class="in-alto-a-destra" href="/IT/Pagina Iniziale.html" target="_self">IT</a>
-    </div>
-    <div style="position: absolute; top:1em; right: 2.6em; padding: right 10em;">
-    <div class="in-alto-a-destra">|</div>
-    </div>
-    <div style="position: absolute; top:1em; right: 1em; padding: right 10em;">
-    <a class="in-alto-a-destra" href="/EN/Homepage.html" target="_self">EN</a>
-    </div>
+    <main>
+        <section id="Esempi">
+            <h2>Esempi</h2>
+            
+            <div class="gallery">
+                <article class="card">
+                    <a href="IlCavaliereOscuro.html" target="_self" id="il-cavaliere-oscuro">
+                        <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                            <image href="../poster/Il cavaliere oscuro.jpg" x="0" y="0" width="300" height="300" />
+                        </svg>
+                    </a>
+                    <p>Il Cavaliere Oscuro (2008)</p>
+                </article>
 
+                <article class="card">
+                    <a href="KamikazeGirls.html" target="_self" id="kamikaze-girls">
+                        <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                            <image href="../poster/Kamikaze_Girls.jpg" x="0" y="0" width="300" height="300" />
+                        </svg>
+                    </a>
+                    <p>Kamikaze Girls (2004)</p>
+                </article>
 
-    <p id="Esempi">Esempi</p>
+                <article class="card">
+                    <a href="NodoAllaGola.html" target="_self" id="nodo-alla-gola">
+                        <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                            <image href="../poster/NodoAllaGola(IT).jpg" x="0" y="0" width="300" height="300" />
+                        </svg>
+                    </a>
+                    <p>Nodo alla gola (1948)</p>
+                </article>
+            </div>
+        </section>
 
-    <div class="gallery">
-        <article class="card">
-            <a href="/IT/IlCavaliereOscuro.html" target="_self">
-                <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" id="Il Cavaliere Oscuro">
-                    <image href="/poster/Il cavaliere oscuro.jpg" x="0" y="0" width="300" height="300" />
-                </svg>
-            </a>
-        </article>
-    </div>
-    <p>Il Cavaliere Oscuro (2008)</p>
-    
-    <div class="gallery">
-        <article class="card">
-            <a href="/IT/KamikazeGirls.html" target="_self">
-                <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" id="Kamikaze Girls">
-                    <image href="/poster/Kamikaze_Girls.jpg" x="0" y="0" width="300" height="300" />
-                </svg>
-            </a>
-        </article>
-    </div>
-    <p>Kamikaze Girls (2004)</p>
-    
-    <div class="gallery">
-        <article class="card">
-            <a href="/IT/NodoAllaGola.html" target="_self">
-                <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" id="Nodo alla gola">
-                    <image href="/poster/NodoAllaGola(IT).jpg" x="0" y="0" width="300" height="300" />
-                </svg>
-            </a>
-        </article>
-    </div>
-    <p>Nodo alla gola (1948)</p>
+        <br>
+        <a href="../Nuovo_progetto.html" target="_blank">Crea nuovo progetto</a>
 
+        <section id="FAQ">
+            <h2 id="accessibilita">FAQ</h2>
+            <p>DOMANDA 1: Come creo un nuovo progetto?</p>
+            <p>DOMANDA 2: Come carico una clip video su cui voglio prendere appunti?</p>
+            <p>DOMANDA 3: Si possono esportare gli appunti presi?</p>
+            <p>DOMANDA 4: Se chiudo il sito senza esportare gli appunti, cosa succede?</p>
+            <p>DOMANDA 5: Come imparo ad usare il sito web?</p> <!-- video tutorial-->
+            <p>DOMANDA 6: Ci sono shortcut che si possono utilizzare?</p>
+        </section>
+    </main>
 
-    <br>
-    <a href="Nuovo_progetto.html" target="_blank">Crea nuovo progetto</a>
-
-    <p id =FAQ>FAQ</p>
-    <p>DOMANDA 1: Come creo un nuovo progetto?</p>
-    <p>DOMANDA 2: Come carico una clip video su cui voglio prendere appunti?</p>
-    <p>DOMANDA 3: Si possono esportare gli appunti presi?</p>
-    <p>DOMANDA 4: Se chiudo il sito senza esportare gli appunti, cosa succede?</p>
-    <p>DOMANDA 5: Come imparo ad usare il sito web?</p> <!-- video tutorial-->
-    <p>DOMANDA 6: Ci sono shortcut che si possono utilizzare?</p>
 </body>
 </html>
