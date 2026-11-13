@@ -1,3 +1,24 @@
+/* Variabili per Light Mode e Dark Mode */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #666666;
+    --btn-hover-bg: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+    --border-color: #999999;
+    --btn-hover-bg: rgba(255, 255, 255, 0.12);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
 h1:hover{
     color: red;
     font-size: 2em;
@@ -19,7 +40,7 @@ header {
 }
 .nav-sinistra a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
     font-weight: bold;
     font-size: 0.9rem;
 }
@@ -30,9 +51,10 @@ header {
 }
 .nav-destra a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
     font-weight: bold;
-    font-size: 0.9rem;}
+    font-size: 0.9rem;
+}
 
 /* p{
     color: red;
@@ -88,7 +110,7 @@ header {
 }
 
 .card .duration{
-    border: 1px solid#666;
+    border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 2px 3px;
     font-size: 0.85em;
@@ -107,11 +129,46 @@ header {
 }
 
 .card .genres .type{
-    border: 1px solid#666;
+    border: 1px solid var(--border-color);
     border-radius: 12px;
     text-align: center;
     padding: 2px 3px;
     font-size: 0.85em;
 }
 
+/* Bottone cambio tema e gestione icone sole/luna */
+.theme-toggle {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
 
+.theme-toggle:hover {
+    background-color: var(--btn-hover-bg);
+    transform: scale(1.05);
+}
+
+.theme-toggle .icon-sun {
+    display: none;
+}
+
+.theme-toggle .icon-moon {
+    display: block;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+    display: block;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+    display: none;
+}
