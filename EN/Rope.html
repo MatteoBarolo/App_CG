@@ -9,34 +9,94 @@
 </head>
 <body>
     <header>
-    <nav class="nav-bar">
-      <div class="nav-sinistra">
-        <a href="Homepage.html">Homepage</a>
-        <a href="../Nuovo_progetto.html">Create a new project</a>
-      </div>
-      <div class="nav-destra">
-        <a href="../IT/NodoAllaGola.html">IT</a>
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambia tema">
-          <!-- Icona Sole -->
-          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2"></path>
-            <path d="M12 20v2"></path>
-            <path d="m4.93 4.93 1.41 1.41"></path>
-            <path d="m17.66 17.66 1.41 1.41"></path>
-            <path d="M2 12h2"></path>
-            <path d="M20 12h2"></path>
-            <path d="m6.34 17.66-1.41 1.41"></path>
-            <path d="m19.07 4.93-1.41 1.41"></path>
-          </svg>
-          <!-- Icona Luna -->
-          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
+        <nav class="nav-bar">
+            <div class="nav-sinistra">
+                <a href="Homepage.html">Homepage</a>
+                <a href="../Nuovo_progetto.html">Create a new project</a>
+            </div>
+            <div class="nav-destra">
+                <a href="../IT/NodoAllaGola.html">IT</a>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+                    <!-- Icona Sole -->
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                    <!-- Icona Luna -->
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
     </header>
-    <h1>ROPE</h1>
+
+    <main class="film-page">
+        <h1 class="film-title">Rope</h1>
+
+        <section class="video-section" aria-label="Film clip">
+            <video class="film-video" controls>
+                <source src="../video/video_rope.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section class="notes-section" aria-labelledby="notes-heading">
+            <h2 id="notes-heading" class="notes-heading">Notes</h2>
+
+            <div class="notes-grid">
+                <!-- Directing -->
+                <article class="note-card">
+                    <div class="note-header">
+                        <img src="../loghi/sedia_regista.png" alt="Directing icon" class="note-icon">
+                        <h3>Directing</h3>
+                    </div>
+                    <div class="note-display">
+                        <p>da inserire</p>
+                    </div>
+                </article>
+
+                <!-- Photography & Color -->
+                <article class="note-card">
+                    <div class="note-header">
+                        <img src="../loghi/fotografia.png" alt="Photography and Color icon" class="note-icon">
+                        <h3>Photography & Color</h3>
+                    </div>
+                    <div class="note-display">
+                        <p>da inserire</p>
+                    </div>
+                </article>
+
+                <!-- Editing -->
+                <article class="note-card">
+                    <div class="note-header">
+                        <img src="../loghi/montaggio.png" alt="Editing icon" class="note-icon">
+                        <h3>Editing</h3>
+                    </div>
+                    <div class="note-display">
+                        <p>da inserire</p>
+                    </div>
+                </article>
+
+                <!-- Audio -->
+                <article class="note-card">
+                    <div class="note-header">
+                        <img src="../loghi/audio.png" alt="Audio icon" class="note-icon">
+                        <h3>Audio</h3>
+                    </div>
+                    <div class="note-display">
+                        <p>da inserire</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
