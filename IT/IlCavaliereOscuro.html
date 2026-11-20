@@ -8,18 +8,102 @@
     <script src="../theme.js" defer></script>
 </head>
 <body>
-    <a href="/IT/Pagina Iniziale.html"><p>Pagina Iniziale</p></a>
-    <h1>IL CAVALIERE OSCURO</h1>
-    
-    <!-- <div style="position: absolute; top:1em; right: 3em; padding: right 10em;">
-    <a class="in-alto-a-destra" href="/app_cg/IT/IlCavaliereOscuro.html" target="_self">IT</a>
-    </div>
-    <div style="position: absolute; top:1em; right: 2.6em; padding: right 10em;">
-    <div class="in-alto-a-destra">|</div>
-    </div> -->
-    <div style="position: absolute; top:1em; right: 1em; padding: right 10em;">
-    <a class="in-alto-a-destra" href="/EN/TheDarkKnight.html" target="_self">EN</a>
-    </div>
-    
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-sinistra">
+                <a href="Pagina Iniziale.html">Homepage</a>
+                <a href="../Nuovo_progetto.html">Crea un nuovo progetto</a>
+            </div>
+            <div class="nav-destra">
+                <a href="../EN/TheDarkKnight.html">EN</a>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambia tema">
+                    <!-- Icona Sole -->
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                    <!-- Icona Luna -->
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="film-page">
+        <h1 class="film-title">Il Cavaliere Oscuro</h1>
+
+        <section class="video-section" aria-label="Clip del film">
+            <video class="film-video" controls>
+                <source src="../video/video_the_dark_knight.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="notes-section" aria-labelledby="notes-heading">
+            <h2 id="notes-heading" class="notes-heading">Note</h2>
+
+            <div class="notes-grid">
+                <!-- Regia -->
+                <article class="note-card">
+                    <div class="note-header">
+                        <img src="../loghi/sedia_regista.png" alt="Icona regia" class="note-icon">
+                        <h3>Regia</h3>
+                    </div>
+                    <div class="note-display">
+                        <p>
+                          Da inserire
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Fotografia e Colore -->
+                <article class="note-card">
+                    <div class="note-header">
+                        <img src="../loghi/fotografia.png" alt="Icona fotografia e colore" class="note-icon">
+                        <h3>Fotografia e Colore</h3>
+                    </div>
+                    <div class="note-display">
+                        <p>
+                          Da inserire
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Montaggio -->
+                <article class="note-card">
+                    <div class="note-header">
+                        <img src="../loghi/montaggio.png" alt="Icona montaggio" class="note-icon">
+                        <h3>Montaggio</h3>
+                    </div>
+                    <div class="note-display">
+                        <p>
+                          Da inserire
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Audio -->
+                <article class="note-card">
+                    <div class="note-header">
+                        <img src="../loghi/audio.png" alt="Icona audio" class="note-icon">
+                        <h3>Audio</h3>
+                    </div>
+                    <div class="note-display">
+                        <p>
+                          Da inserire
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
